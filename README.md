@@ -5,7 +5,7 @@ NOTE: Example assumes you have a "/samba" with your container specific data!
 Change as needed with the SRC data that you are mounting into the container.
 Example named data is defined in the example subdir.
 
-## Required "DATA" directory - named.conf and zone data:
+## Required "DATA" directory:
 This container assumes you have a "/samba" folder with your container specific data:
 You can change that folder as needed, but make sure you update the "-v" mounts for run time
 
