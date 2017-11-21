@@ -6,7 +6,7 @@ ENV TCPLOGHOST=
 # The rsyslog package for alpine has no omrelp support
 #ENV RELPLOGHOST=
 
-RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -qy libnss-ldap samba rsyslog
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -qy libnss-ldap samba smbclient rsyslog
 
 RUN mkdir -m 0755 -p /var/spool/rsyslog  && chown -R syslog:syslog /var/spool/rsyslog 
 
